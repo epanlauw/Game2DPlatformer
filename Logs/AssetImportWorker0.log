@@ -177,3 +177,35 @@ Received Import Request.
 Start importing Assets/Prefabs/sea-1.prefab using Guid(c47e5b5c1936de74a95be8db3dbb8706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3baeb0625c880d87bb606134c9a86d7') in 0.032797 seconds 
   Import took 0.039771 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 322.826863 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(70ae57df2cc026e4b9820a68e30f1721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(70ae57df2cc026e4b9820a68e30f1721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a2f0a18cb9c7b572353bf3dc195186') in 0.007278 seconds 
+  Import took 0.016996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.414966 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(295fa5ad61143f449b1a28c23847f72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(295fa5ad61143f449b1a28c23847f72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b642ffe90bf4e8b5fda960339504b6e') in 0.006737 seconds 
+  Import took 0.013541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.773297 seconds.
+  path: Assets/Settings/2D Renderer Data.asset
+  artifactKey: Guid(6703b2807f5e9614b8d9b54f98fcabe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/2D Renderer Data.asset using Guid(6703b2807f5e9614b8d9b54f98fcabe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3e77cc5bbfd59a22632adc16bf707d') in 0.009754 seconds 
+  Import took 0.017098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.161818 seconds.
+  path: Assets/Settings/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(a6979f61e6d8beb4d90a3f3e9ba01344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/UniversalRenderPipelineAsset.asset using Guid(a6979f61e6d8beb4d90a3f3e9ba01344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86beb37c224f771b275d6d3ccbdb7f25') in 0.009278 seconds 
+  Import took 0.016495 seconds .
+
