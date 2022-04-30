@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 304973060}
   - component: {fileID: 304973062}
   - component: {fileID: 304973061}
+  - component: {fileID: 304973063}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -282,6 +283,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &304973063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304973058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba332d5a69aeec4ab220741681570b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &638555193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,7 +1702,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9fae016c84d87ec47a4f43eff952714b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -1725,6 +1738,7 @@ MonoBehaviour:
   rb2d: {fileID: 0}
   playerInput: {fileID: 0}
   animationManager: {fileID: 0}
+  agentRenderer: {fileID: 0}
 --- !u!1 &1627111784
 GameObject:
   m_ObjectHideFlags: 0
