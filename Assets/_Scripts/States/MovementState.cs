@@ -8,9 +8,6 @@ public class MovementState : State
     [SerializeField]
     protected MovementData movementData;
     public State IdleState;
-
-    public float acceleration, deacceleration, maxSpeed;
-
     private void Awake()
     {
         movementData = GetComponentInParent<MovementData>();
@@ -71,12 +68,12 @@ public class MovementState : State
     {
         if (Mathf.Abs(movementVector.x) > 0)
         {
-            movementData.currentSpeed += acceleration * Time.deltaTime;
+            movementData.currentSpeed += agent.agentData.acceleration * Time.deltaTime;
         }
         else
         {
-            movementData.currentSpeed -= acceleration * Time.deltaTime;
+            movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime;
         }
-        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, maxSpeed);
+        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed);
     }
 }

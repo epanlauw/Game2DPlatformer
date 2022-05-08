@@ -1761,6 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d494ddc351734840b5e26ab520b13ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentData: {fileID: 11400000, guid: b86e2038b51d711438310055d30a9b7a, type: 2}
   rb2d: {fileID: 0}
   agentInput: {fileID: 0}
   animationManager: {fileID: 0}
@@ -1862,9 +1863,6 @@ MonoBehaviour:
       m_Calls: []
   movementData: {fileID: 0}
   IdleState: {fileID: 1626871892}
-  acceleration: 50
-  deacceleration: 50
-  maxSpeed: 6
 --- !u!114 &1626871894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,11 +1885,6 @@ MonoBehaviour:
       m_Calls: []
   movementData: {fileID: 0}
   IdleState: {fileID: 1626871892}
-  acceleration: 50
-  deacceleration: 50
-  maxSpeed: 6
-  jumpForce: 12
-  lowJumpMultiplier: 2
 --- !u!114 &1626871895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,10 +1907,6 @@ MonoBehaviour:
       m_Calls: []
   movementData: {fileID: 0}
   IdleState: {fileID: 1626871892}
-  acceleration: 50
-  deacceleration: 50
-  maxSpeed: 6
-  gravityModifier: 0.5
 --- !u!1 &1627111784
 GameObject:
   m_ObjectHideFlags: 0
