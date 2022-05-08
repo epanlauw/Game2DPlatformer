@@ -1796,6 +1796,8 @@ GameObject:
   - component: {fileID: 1626871891}
   - component: {fileID: 1626871892}
   - component: {fileID: 1626871893}
+  - component: {fileID: 1626871894}
+  - component: {fileID: 1626871895}
   m_Layer: 0
   m_Name: States
   m_TagString: Untagged
@@ -1829,6 +1831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3146ec9ff732a148859ada3b15b8d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpState: {fileID: 1626871894}
+  FallState: {fileID: 1626871895}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1848,6 +1852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f47c767d9a09fce4687844d8cc523fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JumpState: {fileID: 1626871894}
+  FallState: {fileID: 1626871895}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1859,6 +1865,59 @@ MonoBehaviour:
   acceleration: 50
   deacceleration: 50
   maxSpeed: 6
+--- !u!114 &1626871894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626871890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb3e7673706cca4aa3473c165b381ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpState: {fileID: 1626871894}
+  FallState: {fileID: 1626871892}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 0}
+  IdleState: {fileID: 1626871892}
+  acceleration: 50
+  deacceleration: 50
+  maxSpeed: 6
+  jumpForce: 12
+  lowJumpMultiplier: 2
+--- !u!114 &1626871895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626871890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd79e3068bce114b96a37f169e13d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpState: {fileID: 1626871894}
+  FallState: {fileID: 1626871895}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 0}
+  IdleState: {fileID: 1626871892}
+  acceleration: 50
+  deacceleration: 50
+  maxSpeed: 6
+  gravityModifier: 0.5
 --- !u!1 &1627111784
 GameObject:
   m_ObjectHideFlags: 0

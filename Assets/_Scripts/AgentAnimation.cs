@@ -28,8 +28,10 @@ public class AgentAnimation : MonoBehaviour
                 Play("Run");
                 break;
             case AnimationType.jump:
+                Play("Jump");
                 break;
             case AnimationType.fall:
+                Play("Fall");
                 break;
             case AnimationType.climb:
                 break;
