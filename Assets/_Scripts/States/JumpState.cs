@@ -9,9 +9,9 @@ public class JumpState : MovementState
     protected override void EnterState()
     {
         agent.animationManager.PlayAnimation(AnimationType.jump);
-        movementData.currentVelocity = agent.rb2d.velocity;
-        movementData.currentVelocity.y = agent.agentData.jumpForce;
-        agent.rb2d.velocity = movementData.currentVelocity;
+        agent.agentData.currentVelocity = agent.rb2d.velocity;
+        agent.agentData.currentVelocity.y = agent.agentData.jumpForce;
+        agent.rb2d.velocity = agent.agentData.currentVelocity;
         jumpPressed = true;
     }
 
@@ -40,9 +40,9 @@ public class JumpState : MovementState
     {
         if (jumpPressed == false)
         {
-            movementData.currentVelocity = agent.rb2d.velocity;
-            movementData.currentVelocity.y += agent.agentData.lowJumpMultiplier * Physics2D.gravity.y * Time.deltaTime;
-            agent.rb2d.velocity = movementData.currentVelocity;
+            agent.agentData.currentVelocity = agent.rb2d.velocity;
+            agent.agentData.currentVelocity.y += agent.agentData.lowJumpMultiplier * Physics2D.gravity.y * Time.deltaTime;
+            agent.rb2d.velocity = agent.agentData.currentVelocity;
         }
     }
 }

@@ -7,6 +7,10 @@ public class AgentDataSO : ScriptableObject
 {
     [Header("Movement Data")]
     [Space]
+    public int horizontalMovementDirection;
+    public float currentSpeed;
+    public Vector2 currentVelocity;
+    [Space]
     public float maxSpeed = 6;
     public float acceleration = 50;
     public float deacceleration = 50;

@@ -16,9 +16,9 @@ public class FallState : MovementState
 
     public override void StateUpdate()
     {
-        movementData.currentVelocity = agent.rb2d.velocity;
-        movementData.currentVelocity.y += agent.agentData.gravityModifier * Physics2D.gravity.y * Time.deltaTime;
-        agent.rb2d.velocity = movementData.currentVelocity;
+        agent.agentData.currentVelocity = agent.rb2d.velocity;
+        agent.agentData.currentVelocity.y += agent.agentData.gravityModifier * Physics2D.gravity.y * Time.deltaTime;
+        agent.rb2d.velocity = agent.agentData.currentVelocity;
 
         CalculateVelocity();
         SetPlayerVelocity();
