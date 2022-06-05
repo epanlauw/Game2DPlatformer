@@ -34,6 +34,7 @@ public class AgentAnimation : MonoBehaviour
                 Play("Fall");
                 break;
             case AnimationType.climb:
+                Play("Climbing");
                 break;
             case AnimationType.land:
                 break;
@@ -45,6 +46,16 @@ public class AgentAnimation : MonoBehaviour
     public void Play(string name)
     {
         animator.Play(name, -1, 0f);
+    }
+
+    public void StopAnimation()
+    {
+        animator.enabled = false;
+    }
+
+    public void StartAnimation()
+    {
+        animator.enabled = true;
     }
 }
 
